@@ -70,7 +70,7 @@ showDevice(givenDevice)
 time.sleep(1)
 print("")
 time.sleep(1)
-inupdate = raw_input("Would you like to update device?: ")
+inupdate = input("Would you like to update device?: ")
 if inupdate == 'yes':
     updateFeatures()
 #List/Add new features to the device
@@ -85,7 +85,7 @@ showDevice(givenDevice)
         
 
 #Check if you need to remove any outdated features
-removedUserInp = raw_input("Are there any features to be removed? ")
+removedUserInp = input("Are there any features to be removed? ")
 if removedUserInp == "Yes" or removedUserInp == "yes":
     removeFeatures()
     print("Raise to wake and 3D touch have been removed from current device.")
@@ -93,7 +93,7 @@ else:
     print("No features removed")
 
 #Check if you need to add any new features
-newFeatUserInp = raw_input("Are there any new features to add? ")
+newFeatUserInp = input("Are there any new features to add? ")
 if newFeatUserInp == "Yes" or newFeatUserInp == "yes":
     addFeatures()
     print("New Features added: Screensharing, Split Screen")
